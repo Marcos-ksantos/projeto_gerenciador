@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,44 @@
 
     <title>Gerenciador</title>
 </head>
+
 <body>
-    <h4>Gerenciador de Tarefas</h4>
+    <h3>Gerenciador de Tarefas</h4>
 
     <form id="gerenciador">
-        <label for="tarefa" id></label>
+        <label for="tarefa">Tarefa</label>
+        <input type="text" name="tarefa" id="tarefa" placeholder="Informe sua tarefa" required>
+
+        <label for="responsavel">Responsável</label>
+        <input type="text" name="responsavel" id="responsavel" placeholder="Informe seu Responsável" required>
+
+        <label for="descricao">Descrição</label>
+        <textarea name="descricao" id="descricao" placeholder="Descreva sua tarefa" required></textarea>
+
+        <label for="prioridade">Prioridade</label>
+        <input type="radio" name="prioridade" id="prioridade" class="input-B" value="B" required>Baixa
+        <input type="radio" name="prioridade" id="prioridade" class="input-M" value="M" required>Media
+        <input type="radio" name="prioridade" id="prioridade" class="input-A" value="A" required>Alta
+
+        <label for="data">Data da tarefa</label>
+        <input type="date" name="data" id="data" required>
+
+        <button type="submit">Adicionar Tarefa</button>
+
     </form>
 
-    
+<div id="aberto">
+<h2>Em aberto</h2>
+</div>
+
+<div id="andamento">
+    <h2>Em andamento</h2>
+</div>
+
+<div id="finalizado">
+    <h2>finalizado</h2>
+</div>
+
 </body>
+
 </html>
