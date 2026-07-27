@@ -15,23 +15,23 @@
 
     <form id="formulario">
         <label for="tarefa">Tarefa</label>
-        <input type="text" name="tarefa" id="tarefa" placeholder="Informe sua tarefa" >
+        <input type="text" name="tarefa" id="tarefa" placeholder="Informe sua tarefa" required>
 
         <label for="responsavel">Responsável</label>
-        <input type="text" name="responsavel" id="responsavel" placeholder="Informe seu Responsável" >
+        <input type="text" name="responsavel" id="responsavel" placeholder="Informe seu Responsável" required>
 
         <label for="descricao">Descrição</label>
-        <textarea name="descricao" id="descricao" placeholder="Descreva sua tarefa" ></textarea>
+        <textarea name="descricao" id="descricao" placeholder="Descreva sua tarefa" required></textarea>
 
         <label for="prioridade">Defina a prioridade</label>
-        <select id="prioridade" >
+        <select id="prioridade" required>
             <option value="baixa">Baixa</option>
             <option value="media">Média</option>
             <option value="alta">Alta</option>
         </select>
 
         <label for="data">Data da tarefa</label>
-        <input type="date" name="data" id="data" >
+        <input type="date" name="data" id="data" required>
 
         <button type="submit" id="btn-adicionar">Adicionar Tarefa</button>
 
