@@ -59,15 +59,15 @@ function montaCards() {
 
         if (tarefa.prioridade === "alta") {
 
-            card.style.borderBlockStart = "15px solid red";
+            card.style.borderLeft = "15px solid red";
 
         } else if (tarefa.prioridade === "media") {
 
-            card.style.borderBlockStart = "15px solid orange";
+            card.style.borderLeft = "15px solid orange";
 
         } else {
 
-            card.style.borderBlockStart = "15px solid green";
+            card.style.borderLeft = "15px solid green";
 
         }
 
